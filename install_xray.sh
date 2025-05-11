@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # --- 配置开始 (您可以从环境变量或脚本参数获取这些值) ---
-XRAY_USER_DEFAULT="hulu"
-XRAY_PASS_DEFAULT="hulu123456"
+XRAY_USER_DEFAULT="France"
+XRAY_PASS_DEFAULT="faguochat123"
 XRAY_PORT_DEFAULT="25603"
 
 # 从环境变量读取，如果未设置则使用默认值
