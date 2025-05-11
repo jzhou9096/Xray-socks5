@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+
+description="Xray-core server"
+supervisor=supervise-daemon
+
+command="/usr/local/bin/xray"
+command_args="-config /usr/local/etc/xray/config.json"
+
+depend() {
+    need net
+    after firewall
+}
