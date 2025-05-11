@@ -1,0 +1,31 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "listen": "::",
+      "port": __XRAY_PORT__,
+      "protocol": "socks",
+      "settings": {
+        "auth": "password",
+        "accounts": [
+          {
+            "user": "__XRAY_USER__",
+            "pass": "__XRAY_PASS__"
+          }
+        ],
+        "udp": true,
+        "ip": "::"
+      },
+      "tag": "socks-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct-out"
+    }
+  ],
+  "assetsdir": "/usr/local/share/xray/"
+}
