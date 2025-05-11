@@ -3,8 +3,11 @@
 curl -L "https://raw.githubusercontent.com/jzhou9096/Xray-socks5/main/install_xray.sh" | sudo bash
 # 或
 curl -L "https://raw.githubusercontent.com/jzhou9096/Xray-socks5/main/install_xray.sh" -o install_xray.sh
+
 chmod +x install_xray.sh
+
 ./install_xray.sh
+
 # 安装步骤
 # 获取 install_xray.sh 脚本的 Raw 链接
 INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/jzhou9096/Xray-socks5/main/install_xray.sh"
