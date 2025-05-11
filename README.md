@@ -15,6 +15,4 @@ chmod +x install_xray.sh
 sudo ./install_xray.sh
 
 # 或者，如果您想使用自定义的用户名、密码和端口，可以通过环境变量传递：
-# sudo XRAY_USER_ENV="myuser" XRAY_PASS_ENV="mypass" XRAY_PORT_ENV="10800" ./install_xray.sh
-
-#更改端口信息在install_xray.sh文件内
+# sudo XRAY_USER_ENV="用户名" XRAY_PASS_ENV="密码" XRAY_PORT_ENV="端口" ./install_xray.sh
