@@ -1,8 +1,33 @@
+支持协议列表
+TUIC
+Trojan
+Hysteria2
+VMess-WS
+VMess-TCP
+VMess-HTTP
+VMess-QUIC
+Shadowsocks
+VMess-H2-TLS
+VMess-WS-TLS
+VLESS-H2-TLS
+VLESS-WS-TLS
+Trojan-H2-TLS
+Trojan-WS-TLS
+VMess-HTTPUpgrade-TLS
+VLESS-HTTPUpgrade-TLS
+Trojan-HTTPUpgrade-TLS
+VLESS-REALITY
+VLESS-HTTP2-REALITY
+Socks
+
 安装 sing-box
 输入下面命令回车，你可以复制过去，然后在 Xshell 界面按 Shift + Insert 即可粘贴，不能按 Ctrl + V 的。。
 ```
 bash <(wget -qO- -o- https://github.com/233boy/sing-box/raw/main/install.sh)
 ```
+为方便你快速使用，脚本在安装完成后会自动创建一个 VLESS-REALITY 配置
+此时你可以复制 URL 到相关软件 (例如 v2rayN) 去测试一下是否正常使用。
+
 sing-box 管理面板
 现在可以尝试一下输入 sb 回车，即可管理 sing-box
 提示，如果你不想执行任何功能，直接按 Enter 回车退出即可。
