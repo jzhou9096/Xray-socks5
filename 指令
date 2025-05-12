@@ -1,10 +1,11 @@
 #更改端口，用户名等信息
+```
 apk update
 apk add jq
-
+```
 #下面全选
 # --- 开始修改 Xray 配置 ---
-
+```
 # 1. 定义您想要设置的新参数
 NEW_PORT=36583
 NEW_USER="faguoxiaoji"
@@ -15,7 +16,6 @@ TEMP_CONFIG_FILE="${CONFIG_FILE}.tmp" # 临时文件名
 # 2. 备份当前的配置文件 (可选但推荐，以防万一)
 cp "$CONFIG_FILE" "${CONFIG_FILE}.bak_$(date +%Y%m%d_%H%M%S)"
 echo "当前配置文件已备份。"
-
 # 3. 使用 jq 修改配置
 #    这个命令会读取原始配置文件，进行修改，然后将结果输出到临时文件
 echo "正在使用 jq 修改配置文件..."
@@ -60,3 +60,4 @@ else
 fi
 
 # --- Xray 配置修改结束 ---
+```
