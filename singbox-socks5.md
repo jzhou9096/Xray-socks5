@@ -2,7 +2,10 @@
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)
 ```
-# 创建个.json文件 以root方式  su -
+# 创建个.json文件 以root方式  
+```
+su -
+```
 ```
 vi /etc/sing-box/conf/20_socks_inbounds.json
 ```
