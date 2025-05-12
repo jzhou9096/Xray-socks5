@@ -42,6 +42,8 @@ vi /etc/sing-box/conf/20_socks_inbounds.json
 ```
 rc-service sing-box restart
 rc-service sing-box status
+```
 #检查 sing-box 服务状态
+```
 rc-service sing-box status
 ```
