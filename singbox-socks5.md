@@ -1,10 +1,13 @@
 #这是基于F佬的脚本安装
+```
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)
-
+```
 # 创建个.json文件 以root方式  su -
+```
 vi /etc/sing-box/conf/20_socks_inbounds.json
-
+```
 # 复制下面
+```
 {
   "inbounds": [
     {
@@ -22,13 +25,20 @@ vi /etc/sing-box/conf/20_socks_inbounds.json
     }
   ]
 }
-
-# 按esc  然后输入  :wq
-
+```
+# 按esc  
+# 然后输入  
+```
+:wq
+```
 #检查整体配置语法
+```
 /etc/sing-box/sing-box check -C /etc/sing-box/conf
+```
 #重启 sing-box 服务
+```
 rc-service sing-box restart
 rc-service sing-box status
 #检查 sing-box 服务状态
 rc-service sing-box status
+```
