@@ -35,7 +35,7 @@ domain="cloudflare.com"
 ```
 docker run --name nginx-mtproxy -d -e tag="$tag" -e secret="$secret" -e domain="$domain" -e ip_white_list="OFF" -p 8080:80 -p 8443:443 ellermister/nginx-mtproxy:latest
 ```
-# 部署nginx-mtproxy不添加TAG
+# 部署nginx-mtproxy不添加TAG(常用)
 ```
 docker run --name n-mt -d -e secret="$secret" -e domain="$domain" -e ip_white_list="OFF" -p 8081:80 -p 35681:443 ellermister/nginx-mtproxy:latest
 ```
