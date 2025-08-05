@@ -57,6 +57,6 @@ http://ip/add.php
 
 # 查看：
 ```
-docker logs nginx-mtproxy
+docker logs n-mt
 ```
 源文件：https://hub.docker.com/r/ellermister/nginx-mtproxy
